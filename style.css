@@ -1,9 +1,36 @@
+/* ===== Шрифт ===== */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
 /* ===== Общие настройки ===== */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffeef5;
+
+  /* более розовый фон */
+  background: #ffdce8;
+
   color: #333;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== Цветочки (фон) ===== */
+body::before {
+  content: "🌸 🌿 🌷 🌼 🌸 🌿 🌷 🌼 🌸 🌿 🌷 🌼";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+
+  font-size: 40px;
+  opacity: 0.15;
+
+  width: 200%;
+  height: 200%;
+
+  line-height: 80px;
+
+  pointer-events: none;
 }
 
 /* ===== Контейнер ===== */
@@ -17,11 +44,15 @@ body {
 
   text-align: center;
   padding: 20px;
+
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== Заголовок ===== */
 .title {
-  font-size: 32px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 34px;
   margin-bottom: 16px;
 }
 
@@ -40,7 +71,7 @@ body {
   border: none;
   border-radius: 25px;
 
-  background: #ff8fb1;
+  background: #ff7fa8;
   color: white;
   font-size: 16px;
 
@@ -48,7 +79,6 @@ body {
   transition: 0.2s;
 }
 
-/* эффект при нажатии */
 .start-btn:active {
   transform: scale(0.96);
 }
