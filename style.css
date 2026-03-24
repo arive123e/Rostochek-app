@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 
-/* ===== Общие настройки ===== */
+/* Общие настройки */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -8,46 +8,10 @@ body {
   color: #333;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
-/* ===== Цветочный фон ===== */
-
-/* Общий стиль цветков */
-.bg-flower {
-  position: fixed;
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Разные позиции */
-
-.f1 {
-  top: 20px;
-  left: 20px;
-  width: 120px;
-}
-
-.f2 {
-  bottom: 30px;
-  right: 20px;
-  width: 140px;
-}
-
-.f3 {
-  top: 50%;
-  left: 10px;
-  width: 100px;
-  transform: translateY(-50%);
-}
-
-.f4 {
-  bottom: 80px;
-  left: 50%;
-  width: 120px;
-  transform: translateX(-50%);
-}
-/* ===== Контейнер ===== */
+/* Контейнер приветствия */
 .welcome-container {
   min-height: 100vh;
   display: flex;
@@ -57,10 +21,10 @@ body {
   text-align: center;
   padding: 24px;
   position: relative;
-  z-index: 1;
+  z-index: 2; /* текст поверх цветов */
 }
 
-/* ===== Заголовок ===== */
+/* Заголовок */
 .title {
   font-family: 'Comfortaa', sans-serif;
   font-size: 36px;
@@ -69,7 +33,7 @@ body {
   color: #2f2a2c;
 }
 
-/* ===== Подзаголовок ===== */
+/* Подзаголовок */
 .subtitle {
   font-size: 17px;
   color: #6f5d64;
@@ -78,7 +42,7 @@ body {
   margin: 0 0 36px;
 }
 
-/* ===== Кнопка ===== */
+/* Кнопка */
 .start-btn {
   padding: 14px 32px;
   border: none;
@@ -88,19 +52,47 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   box-shadow: 0 8px 20px rgba(244, 126, 165, 0.28);
-}
-
-.start-btn:hover {
-  background: #ef739c;
 }
 
 .start-btn:active {
   transform: scale(0.97);
 }
 
-/* ===== Адаптивность ===== */
+/* Общий стиль фоновых цветов */
+.bg-flower {
+  position: fixed;
+  z-index: 1;           /* под текстом, но над фоном */
+  pointer-events: none; /* чтобы не мешали нажимать */
+  opacity: 0.18;        /* пока делаем заметнее */
+}
+
+/* Позиции */
+.f1 {
+  top: 20px;
+  left: 20px;
+  width: 130px;
+}
+
+.f2 {
+  top: 40px;
+  right: 30px;
+  width: 120px;
+}
+
+.f3 {
+  bottom: 30px;
+  left: 40px;
+  width: 140px;
+}
+
+.f4 {
+  bottom: 20px;
+  right: 20px;
+  width: 130px;
+}
+
+/* Телефон */
 @media (max-width: 600px) {
   .title {
     font-size: 31px;
@@ -116,8 +108,8 @@ body {
     max-width: 220px;
   }
 
-  body::before {
-    background-size: 140px 140px, 100px 100px, 80px 80px;
-    opacity: 0.32;
+  .f1, .f2, .f3, .f4 {
+    width: 90px;
+    opacity: 0.14;
   }
 }
