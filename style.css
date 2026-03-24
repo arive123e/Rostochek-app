@@ -12,6 +12,41 @@ body {
 
 /* ===== Цветочный фон ===== */
 
+/* Общий стиль цветков */
+.bg-flower {
+  position: fixed;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Разные позиции */
+
+.f1 {
+  top: 20px;
+  left: 20px;
+  width: 120px;
+}
+
+.f2 {
+  bottom: 30px;
+  right: 20px;
+  width: 140px;
+}
+
+.f3 {
+  top: 50%;
+  left: 10px;
+  width: 100px;
+  transform: translateY(-50%);
+}
+
+.f4 {
+  bottom: 80px;
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
 /* ===== Контейнер ===== */
 .welcome-container {
   min-height: 100vh;
