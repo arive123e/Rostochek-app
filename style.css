@@ -6,8 +6,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: linear-gradient(
   180deg,
-  #fff6f9 0%,
-  #f6d6e2 100%
+  red 0%,
+  blue 100%
 );
   color: #333;
   min-height: 100vh;
