@@ -4,11 +4,11 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
- background: linear-gradient(
-  180deg,
-  #fff3f7 0%,
-  #f3b6cc 100%
-);
+  background: linear-gradient(
+    180deg,
+    #ffeaf2 0%,
+    #eaa3bd 100%
+  );
 
   color: #333;
   min-height: 100vh;
