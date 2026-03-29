@@ -10,16 +10,32 @@ html, body {
   overscroll-behavior: none;
 }
 
+/* ФИКС ЭКРАНА */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+/* ОСНОВА */
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(
-    180deg,
-    #ffeaf2 0%,
-    #eaa3bd 100%
-  );
+
+  background:
+    linear-gradient(180deg, rgba(255, 234, 242, 0.6), rgba(234, 163, 189, 0.6)),
+    url("images/welcome-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #333;
-  position: fixed;
-  inset: 0;
+
+  position: fixed;   /* 🔥 ключевой момент */
+  inset: 0;          /* 🔥 растягиваем на весь экран */
+
   touch-action: none;
 }
 
