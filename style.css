@@ -4,7 +4,11 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f6d6e2;
+  background: linear-gradient(
+  180deg,
+  #fff6f9 0%,
+  #f6d6e2 100%
+);
   color: #333;
   min-height: 100vh;
   position: relative;
@@ -60,58 +64,4 @@ body {
 }
 
 /* Общий стиль фоновых цветов */
-.bg-flower {
-  position: fixed;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.12; /* мягко */
-}
 
-/* асимметрия + разные размеры */
-
-.f1 {
-  top: 6%;
-  left: 4%;
-  width: 110px;
-  transform: rotate(-10deg);
-}
-
-.f2 {
-  top: 18%;
-  right: 8%;
-  width: 80px;
-  transform: rotate(15deg);
-}
-
-.f3 {
-  bottom: 12%;
-  left: 10%;
-  width: 130px;
-  transform: rotate(-5deg);
-}
-
-.f4 {
-  top: 55%;
-  right: 12%;
-  width: 95px;
-  transform: rotate(20deg);
-}
-
-/* телефон */
-@media (max-width: 600px) {
-  .f1 {
-    width: 80px;
-  }
-
-  .f2 {
-    width: 60px;
-  }
-
-  .f3 {
-    width: 90px;
-  }
-
-  .f4 {
-    width: 70px;
-  }
-}
