@@ -62,12 +62,17 @@ body {
   padding: 14px 32px;
   border: none;
   border-radius: 999px;
-  background: #f47ea5;
+  background: linear-gradient(135deg, #ec6f9a, #d94d7a);
   color: white;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(244, 126, 165, 0.28);
+  box-shadow: 0 12px 30px rgba(217, 77, 122, 0.35);
+  transition: all 0.2s ease;
+}
+
+.start-btn:active {
+  transform: scale(0.96);
 }
 
 .start-btn:active {
