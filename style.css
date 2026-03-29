@@ -60,15 +60,11 @@ body {
 /* Кнопка */
 .start-btn {
   padding: 14px 32px;
-  border: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, #ec6f9a, #d94d7a);
+  background: #ec6f9a;
   color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 12px 30px rgba(217, 77, 122, 0.35);
-  transition: all 0.2s ease;
+  border: 2px solid rgba(255,255,255,0.4);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .start-btn:active {
