@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 
-/* фикс экрана */
+/* Полный запрет прокрутки */
 html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
-/* Общие настройки */
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: linear-gradient(
     180deg,
     #ffeaf2 0%,
     #eaa3bd 100%
   );
-
   color: #333;
-  min-height: 100vh;
-  position: relative;
+  position: fixed;
+  inset: 0;
+  touch-action: none;
 }
 
 /* Контейнер приветствия */
 .welcome-container {
-  min-height: 100vh;
+  width: 100%;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 24px;
+  box-sizing: border-box;
   position: relative;
-  z-index: 2; /* текст поверх цветов */
+  z-index: 2;
 }
 
 /* Заголовок */
