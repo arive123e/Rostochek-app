@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 
+/* фикс экрана */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Общие настройки */
 body {
   margin: 0;
@@ -13,7 +19,6 @@ body {
   color: #333;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 /* Контейнер приветствия */
