@@ -11,17 +11,22 @@ html, body {
 }
 
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
- background: linear-gradient(
-  180deg,
-  #fff0f6 0%,
-  #eaa3bd 60%,
-  #e18cad 100%
-  );
+
+  /* фон: картинка + лёгкий розовый градиент сверху */
+  background:
+    linear-gradient(180deg, rgba(255, 234, 242, 0.6), rgba(234, 163, 189, 0.6)),
+    url("images/welcome-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #333;
-  position: fixed;
-  inset: 0;
-  touch-action: none;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Контейнер приветствия */
